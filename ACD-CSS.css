@@ -1,0 +1,254 @@
+/* ACD-W2053802.CSS */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* $$1 (Specify font(s)) ## */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* $$3 (Custom colors) ## */
+    background: linear-gradient(to right, #FDFCFB ,#E2D1C3); /* gradient ##*/
+}
+
+
+
+header {
+    background-color: rgb(12, 16, 27); /* $$3 (Custom colors) ## */
+    color: white; /* $$3 (Custom colors) ## */
+    text-align: center; /* $$12 (Text alignment) ## text effects */
+    padding: 8px; /* $$12 (Margin and padding) ## text effects */
+}
+.box {
+    background: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+
+h2 ~ .blog-box {   
+    margin-top: 31px;  /*Relational sectors ##*/
+}
+
+
+nav {
+    display: flex; /* $$10 (Flexbox)## )" */
+    justify-content: center; /* $$10 (Flexbox) && */
+    background-color: #34495e; /* $$3 (Custom colors) ## */
+    padding: 10px; /* $$12 (Margin and padding) ## text effects */
+}
+
+nav a {
+    color: white; /* $$3 (Custom colors) ##*/
+    margin: 0 180px; /* $$12 (Margin and padding) ##text effects */
+    text-decoration: none; /* $$7 (User action pseudo-classes) ## */
+    font-size: 23px;
+   
+}
+
+nav a:hover {
+    text-decoration: underline; /* $$7 (User action pseudo-classes) ## */
+}
+nav a:not(.x) {  /*negation pseodo class ##*/
+    color: #c1c89e; /* This will apply to all nav links except the one with class 'contact' */ 
+}
+
+.books-box ul li:nth-child(1){  /*nth pseudo class ##*/
+    color: #ff0000; /* Change text color */
+    font-weight: bold; /* Make it bold */
+    
+    
+}
+
+.left-section,
+.right-section {
+    display: inline-block; /* $$10 (Flexbox) && */
+    width: 44%; /* $$12 (Margin and padding) ##text effects */
+    vertical-align: top; /* $$12 (Text alignment) text effects## */
+}
+
+.left-section {
+    padding: 50px; /* $$12 (Margin and padding) ## text effects */
+}
+
+.right-section {
+    padding: 25px; /* $$12 (Margin and padding) ## text effects */
+}
+ul li {
+    margin-bottom: 29px; /* Adjust the space as needed */
+}
+
+
+h1, h2, h3, h4 {
+    color: #2c3e50; /* $$3 (Custom colors) ## */
+}
+
+h2{
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Example text effect ##*/
+}
+
+h2::after {  /*psudo elements##*/
+    content: " 📝 "; /* Adding an icon after h2 elements */
+    font-size: 0.9em; /* Adjust size txt effects ##*/
+}
+
+.quote-box {
+    background: rgba(255, 255, 255, 0.9); /* $$3 (Semi-transparency) && */
+    padding: 15px; /* $$12 (Margin and padding) ##text effects */
+    border-radius: 5px; /* $$9 (Borders and rounded corners) && */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* $$3 (Shadows)##  */
+    
+}
+
+.quote-box p {
+    font-style: italic; /* $$11 (Text effects) ## */
+}
+
+.scrollable-quotes {
+    height: 254px; /* Set a fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Add a border for visibility */
+    padding: 18px; /* Add some padding */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners */
+    width: auto;
+    text-align: center;
+}
+
+.scrollable-quotes blockquote {
+    margin: 0 0 10px; /* Space between quotes */
+    padding: 11px; /* Padding inside blockquotes */
+    font-style: italic; /* Italic style for quotes */
+    border-left: 3px solid #2c3e50; /* Left border for emphasis */
+    padding-left: 10px; /* Space between the left border and text */
+    font-size: large;
+}
+
+
+
+.image-gallery {
+    display: flex;/* $$10 (Grid) && */
+    flex-wrap: wrap;/* $$10 (Grid) && */
+    gap: 4px; /* $$12 (Margin and padding) ##text effexts */
+   
+}
+
+.image-gallery img {
+    width: 38%; /* $$14 (Responsiveness) && */
+    height: auto; /* $$14 (Responsiveness) && */
+    border-radius: 4px; /* $$9 (Borders and rounded corners) ##*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    /*##animation+*/
+    margin-bottom: 11px;
+   
+}
+.image-gallery img:hover {
+    transform: scale(1.1); /* Zooms in on the image when hovered  (transform)##*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover ##animation+*/ 
+}
+
+/*special border to images with alt text "Image 1" ##Attribute selectors */
+.image-gallery img[alt="Image 1"] {
+    border: 3px solid #150737;
+    margin-top: 10px;
+}
+
+input:invalid { /*validity pseudo class ##*/
+    border: 2px solid #f71551; 
+}   
+
+.content-box {
+        padding: 43px;
+            
+        margin: 18px;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 16px;
+        height: 854px;
+        }
+
+
+footer {
+    background-color: #2c3e50; /* $$3 (Custom colors) ## */
+    color: #e0e0e0; /* $$3 (Custom colors) ## */
+    text-align: center; /* $$12 (Text alignment) ##text effects */
+    padding: 10px; /* $$12 (Margin and padding) ## text effects */
+    position: relative; /* $$14 (Responsiveness) && */
+}
+
+
+
+footer > button { /* child combination##*/
+    background-color: #b8baaf; /* $$3 (Custom colors) ## */
+    color: #020036; /* $$3 (Custom colors) ## */
+    border: none; /* $$9 (Borders and rounded corners) ## */
+    padding: 10px; /* $$12 (Margin and padding) ##text effe`ts */
+    cursor: pointer; /* $$7 (User action pseudo-classes) ## */
+    transition: background-color 0.3s ease, transform 0.3s ease; /*Transition##*/
+   
+}
+
+footer > button:hover {  /* child combination ## */ 
+    background-color: #d0d7ae; /* $$3 (Custom colors) ## */
+    transform: translateY(-3px); /* Lifts the button on hover  transform ##*/ 
+}
+input, textarea {
+    width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; transition: border-color 0.3s;
+}
+
+/* Media Queries */
+/* Media query for devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 1000px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        padding: 10px; /* Reduce padding */
+    }
+
+    nav a {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+        font-size: 18px; /* Smaller font size for navigation */
+    }
+
+    /* Adjust left and right sections to stack */
+    .left-section,
+    .right-section {
+        display: block; /* Change to block to stack sections */
+        width: 100%; /* Full width */
+        
+    }
+
+    /* Image gallery adjustments */
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+}
+
+/* Media query for devices with a max width of 480px (mobile devices) */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 23px; /* Smaller font size for header */
+    }
+    
+    
+
+    nav a {
+        font-size: 18px; /* Further decrease font size for mobile */
+    }
+
+    .quote-box {
+        padding: 10px; /* Reduce padding in quote box */
+    }
+
+    footer {
+        font-size: 16px; /* Smaller font size in footer */
+    }
+
+    /* Ensure images in the gallery are responsive */
+    .image-gallery img {
+        max-width: 48%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin: 1%;
+    }
+}
+
